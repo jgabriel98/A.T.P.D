@@ -4,7 +4,7 @@ Trabalho de introdução a Programação 2, jogo de terminal de cartas ( Yu-gi-o
 
 Este programa foi criado como trabalho da disciplina Introdução a Programação 2, do curso de Ciências da Computação, no 2° período do curso, semestre 2016.2 ( ano 2016, 2° semestre).
 
-O manual de como jogar está disponível no repositório, como arquivo txt
+O manual de como jogar está no menu principal do jogo e também disponível no repositório, como arquivo txt.
 
 Foi feito inteiramente em C e possui alguns bugs.
 
