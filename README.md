@@ -11,7 +11,7 @@ Foi feito inteiramente em C e possui alguns bugs.
 O projeto foi abandonado, sinta-se livre para utilizá-lo para sí.
 
 ### Dependências
-- Sistema operacional linux (preferencia ubuntu)
+- Sistema operacional linux de preferencia ubuntu ( o código nunca foi testado para windows, mas pode funcionar com algumas adaptações de chamadas especificas do SO e terminal)
 - compilador gcc versão >= 4.0
 - biblioteca ncurses instalada
 

@@ -1,0 +1,157 @@
+-------------------------------BEM VINDO AO MANUAL DO A.T.P.D-C.A.R.D ------------------------------------------
+                                                      p|r|o|i  card game
+                                                      e|a|r|v
+                                                      n|b|é|e
+                                                      a|a|m|r
+                                                      s|l| |t
+                                                       |h| |i
+                                                      u|o| |d
+                                                      m| | |o
+														
+														
+														
+1-Iniciando:
+
+	na primeira tela é mostrada a apresentação do jogo, pressione Enter para entrar no menu;
+	
+em seguida é apresentado um menu com as seguintes opções:
+	Novo Jogo( inicia um novo jogo)
+	vizualizar baralhos(disponibiliza uma lista de baralhos existentes e aguarda que o usuário digite o nome do baralho que deseja vizualizar)
+	Abrir editor de baralhos ( atualiza e inicia o editor de baralhos atpd_deck)
+	ler regras ( abre o manual no editor de texto padrao linux ( gedit))
+	Atualizar A.T.P.D-C.A.R.D (compila o codigo fonte de "atpd.c" presente na pasta e o executa)
+	Sair (sai do jogo)
+	
+para realizar alguma das opções, digite o numero respectivo à ele no terminal, e aperte enter
+
+
+
+
+
+
+
+
+
+UTILIZANDO o editor DE BARALHOS:
+
+no gerenciador de baralhos atpd_deck (opcao 3) pode-se criar novos baralhos e deletar;
+
+para criar basta seguir os passos intuitivamente preenchendo os campos solicitados
+ ( obs: ao "criar" um baralho com o mesmo nome de um que ja exista, o antigo é apagado e o novo é salvo no lugar);
+
+
+
+
+/*********************INICIO DO TUTORIAL DO JOGO**************************/
+
+Ao escolher novo jogo, deve-se selecionar a quantidade de jogadores, digitando '1' ou '2' (numeros apenas);
+
+logo em seguida é listado os baralhos disponíveis, para escolher um deles deve-se digitar IGUALMENTE o nome
+do qual deseja jogar com, ou então digitar "aleatorio" para jogar com um escolhido pelo sistema aleatoriamente;
+
+
+
+Após alguns segundos o jogo é iniciado:
+
+TELA DA MÃO:
+
+
+Na regiao inferior da tela é mostrada suas cartas na mão e à esquerda seu atual HP (por padrão todos inciam em 8000)
+
+Já na região superior direito é mostrada o HP do oponente,
+enquanto no centro temos o campo de batalha/mesa;
+
+
+Então é mostrado tal texto: "Jogador x, selecione a carta e seu modo: "
+	selecione a carta que deseja jogar na mesa com as teclas direcionais 'esquerda' e 'direita',
+	e o modo com as teclas direcionais 'cima' e 'baixo', sendo 'baixo' para colocar a carta em modo de defesa e 'cima' para modo de ataque ( o modo atual é mostrado no canto inferior pelas letras 'a' e 'd').
+	Então pressione enter para confirmar sua escolha.
+
+	Para descartar uma carta da mão, selecione a carta com as teclas direcionais e aperte Delete (ou aperte 'x' para mudar o modo para 'deletar' e então pressione enter);
+
+	Caso não queira selecionar nenhuma, pressione ESC;
+
+uma tela mostrando a carta escolhida será mostrada, pressione Enter para continuar (o mesmo acontece quando o oponente seleciona a carta);
+
+
+
+
+TELA DA MESA:
+A partir da primeira rodada apos toda seleção de cartas da mão você irá para a tela do campo de batalha/mesa,
+lá as cartas em VERMELHO,AMARELO e CINZA indicam que estão em modo de ATAQUE,DEFESA e vazias (não há carta ali), respectivamente.
+Onde as cartas de cima são as inimigas, e as inferiores as suas;
+
+ATENÇÃO NESTA PARTE!!:
+	Nesta tela você tem 3 opções:
+	-atacar
+	-mudar o modo da carta (ataque-defesa-excluir)
+	-terminar jogada
+
+ATACAR - para atacar, selecione com as teclas direcionais à carta em modo de ataque (não é possivel atacar em modo de defesa) que quer utilizar para o ataque,
+aperte Enter e digite o numero (de 1 a 3) da carta inimiga que deseja atacar e pressione enter;
+
+
+MUDAR DE MODO - para mudar de modo, selecione a carta com as teclas direcionais e mude o modo dela com as teclas direcionais 'cima' e 'baixo'.
+		Para excluir a carta selcionada, pressione delete.
+
+
+
+TERMINAR JOGADA - pressione ESC, ou faça jogadas até o limite disponível.
+
+
+NOTA: em cada rodada, o jogador tem direito à X jogadas, sendo X= quantidade de cartas em mesa;
+
+
+
+
+
+
+REGRAS DE BATALHA:
+
+Durante um ataque de uma carta, Vence aquela que tiver o maior atributo ativo;
+sendo assim, há duas possibilidades:
+
+ATAQUE A UMA CARTA EM MODO DE DEFESA:
+	Caso a carta atacante tiver o ATK  maior que a DEF da carta defensora, a carta defensora será destruida e o jogador defensor
+	não perderá HP. Caso contrário, o atacante terá sua carta destruída e perderá pontos de vida na mesma quantidade de diferença 
+	dos atributos ( DEF.cartaDefensora - ATK.cartaAtacante);
+
+ATAQUE A UMA CARTA EM MODO DE ATAQUE:
+
+	o mesmo para o modo de defesa, porém o atributo levado em conta da carta Defensora é o ATK, e em caso do ATK da carta atacante
+	ser maior, o jogador defensor perderá HP = ATK.cartaAtacante - ATK.cartaDefensora;
+
+
+
+/****************************************************/
+
+
+Notas: Por padrão, cada baralho possui 30 cartas, nenhuma carta pode ser usada mais de uma vez pelo mesmo jogador na mesma batalha,
+
+
+*NOTAS SOBRE CRIAÇÃO DE BARALHO: ao criar baralhos, respeite tais limites: todos atributos devem variar de 0-9999, isto é, nenhum pode ser negativo,
+	caso saia no meio de uma criação, resete os baralhos por precaução;
+
+
+
+
+
+		BOM JOGO!!!! :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
