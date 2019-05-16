@@ -15,7 +15,9 @@ O projeto foi abandonado, sinta-se livre para utilizá-lo para sí.
 - compilador gcc versão >= 4.0
 - biblioteca ncurses instalada
 
-### dica
+### Notas
 aperte 6 no menu para ver um preview da animação de vitória!
+
+O código está mal comentado, pois foi feito no inicio de meus estudos, onde não tinha noção de organização de documentação.
 
 se você ja ouviu falar de yugi-oh, terá mais facilidade para enter como funciona o jogo.
